@@ -2,6 +2,12 @@
   "name": "les-jolies-brindilles-react",
   "version": "0.1.0",
   "private": true,
+  "description": "Website for Les Jolies Brindilles",
+	"author": "Rémi PHILIPPOT",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/RemiPHILIPPOT/lesjoliesbrindilles-react.git"
+	},
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

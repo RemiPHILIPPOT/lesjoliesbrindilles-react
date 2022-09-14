@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import FsLightbox from 'fslightbox-react';
+import FsLightbox from "fslightbox-react";
 import ProjectImg1 from "../../assets/img/assetsljb/bouquet-ble-roses.jpeg";
 import ProjectImg2 from "../../assets/img/assetsljb/bouquet-roses-veronique.jpg";
 import ProjectImg3 from "../../assets/img/assetsljb/centre-de-table-mariage.jpeg";
@@ -8,7 +8,7 @@ import ProjectImg4 from "../../assets/img/assetsljb/composition-mariage-pampa.jp
 import ProjectImg5 from "../../assets/img/assetsljb/suspension-centre-de-table-mariage.jpeg";
 import ProjectImg6 from "../../assets/img/assetsljb/coeur-deuil.jpeg";
 
-export default function ProjectBox({ img, title, text, action }) {
+export default function ProjectBox({ img, title, text, action, alt }) {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -16,11 +16,21 @@ export default function ProjectBox({ img, title, text, action }) {
       <ImgBtn className="aniamte pointer" onClick={() => setToggle(!toggle)}>
         <FsLightbox
           toggler={toggle}
-          sources={img
-            ? [img] : [ProjectImg1, ProjectImg2, ProjectImg3, ProjectImg4, ProjectImg5, ProjectImg6]}
+          sources={
+            img
+              ? [img]
+              : [
+                  ProjectImg1,
+                  ProjectImg2,
+                  ProjectImg3,
+                  ProjectImg4,
+                  ProjectImg5,
+                  ProjectImg6,
+                ]
+          }
         />
         {/* <ImgBtn className="aniamte pointer" onClick={action ? () => action() : null}> */}
-        <img className="radius8" src={img} alt="project"></img>
+        <img className="radius8" src={img} alt={alt}></img>
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>

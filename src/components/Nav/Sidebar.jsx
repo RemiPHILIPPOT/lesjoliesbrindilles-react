@@ -107,7 +107,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-760}
           >
             Contact
           </Link>

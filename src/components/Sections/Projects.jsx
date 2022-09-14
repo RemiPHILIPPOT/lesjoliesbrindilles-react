@@ -34,31 +34,26 @@ export default function Projects() {
             
               <ProjectBox
                 img={ProjectImg1}
-                title="Bouquet Mariage 2022"
-                text="Theme Blé"
-
-                //on click action showing lightbox with images of the project 
-                // Onclick={() => {
-                //   Lightbox( [ProjectImg1, ProjectImg2, ProjectImg3, ProjectImg4, ProjectImg5, ProjectImg6] ); 
-                // } }
-                // on click call function Lightbox 
-
-                // action={() => } 
+                title="Bouquet de Mariée"
+                text="Mariage de E&A thème champêtre"
+                alt="Bouquet de mariage"
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg2}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                title="Bouquet"
+                text="Commande pour un anniversaire de mariage"
+                alt="Bouquet anniversaire de mariage"
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg3}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                title="Centre de table"
+                text="Mariage de E&B thème bohème chic"
+                alt="centre de table mariage"
                 action={() => alert("clicked")}
               />
             </div>
@@ -67,24 +62,27 @@ export default function Projects() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg4}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                title="Arche Cérémonie Laïque"
+                text="Mariage de E&B thème bohème chic"
+                alt="Arche mariage fleurs "
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg5}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                title="Centre de table des mariés"
+                text="Mariage de E&B thème bohème chic"
+                alt="centre de table mariage"
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg6}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                title="Composition de deuil"
+                text="Commande d'un coeur de roses rouges et blanches"
+                alt="Composition de deuil fleurie"
                 action={() => alert("clicked")}
               />
             </div>

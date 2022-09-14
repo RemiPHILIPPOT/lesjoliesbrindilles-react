@@ -34,7 +34,7 @@ export default function TopNavbar() {
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img
-              style={{ width: "350px" }}
+              style={{ width: "300px" }}
               src={Logo}
               alt="Logo les jolies brindilles fleuriste passionnée"
             />

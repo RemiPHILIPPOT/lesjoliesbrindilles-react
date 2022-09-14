@@ -34,12 +34,12 @@ export default function TopNavbar() {
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img
-              style={{ width: "450px" }}
+              style={{ width: "350px" }}
               src={Logo}
               alt="Logo les jolies brindilles fleuriste passionnée"
             />
             <h1
-              style={{ marginLeft: "15px" }}
+              style={{  }}
               className="font20 extraBold"
             ></h1>
           </Link>

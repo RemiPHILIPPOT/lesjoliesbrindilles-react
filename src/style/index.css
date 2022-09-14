@@ -107,6 +107,10 @@
     border-bottom: 2px solid rgb(120, 70, 85);
     color: rgb(120, 70, 85);;
   }
+  .activePink {
+    border-bottom: 2px solid rgba(235,215,215,255);
+    color: rgba(235,215,215,255);;
+  }
   .tag {
     padding: 5px 10px;
     margin: 10px 0;
@@ -247,6 +251,9 @@
   /* BACKGROUNDS */
   .darkBg {
     background-color:rgba(235,215,215,255);
+  }
+  .burgundyBg {
+    background-color: rgb(120, 70, 85);
   }
   .purpleBg {
     background-color: #7620FF;

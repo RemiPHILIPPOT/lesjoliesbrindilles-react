@@ -17,9 +17,11 @@ export default function Header() {
             compositions et de bouquets sur mesure ainsi que la livraison de vos
             commandes.
           </HeaderP>
-          <BtnWrapper>
+          {/* <BtnWrapper>
             <a href="tel:+33658784107"><FullButton  title="Appelez-moi" /></a>
-            
+          </BtnWrapper> */}
+          <BtnWrapper>
+            <a href="tel:+33658784107"><FullButton  title="Passer commande" /></a>
           </BtnWrapper>
         </div>
       </LeftSide>
@@ -38,7 +40,7 @@ export default function Header() {
 }
 
 const Wrapper = styled.section`
-  /* padding-top: 80px; */
+  padding-top: 90px;
   width: 100%;
   min-height: 840px;
   @media (max-width: 960px) {

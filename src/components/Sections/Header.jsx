@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import HeaderImage from "../../assets/img/interieurmag.jpeg";
+import HeaderImage from "../../assets/img/magasin2.jpeg";
 
 export default function Header() {
   return (

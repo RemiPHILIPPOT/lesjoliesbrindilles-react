@@ -46,7 +46,7 @@ const Wrapper = styled.div`
     height: 450px;
     margin: 20px 0;
     @media (max-width: 768px) {
-      width: 400px;/
+      max-width: 400px;/
     }
   }
   h3 {

@@ -38,10 +38,7 @@ export default function TopNavbar() {
               src={Logo}
               alt="Logo les jolies brindilles fleuriste passionnée"
             />
-            <h1
-              style={{  }}
-              className="font20 extraBold"
-            ></h1>
+            
           </Link>
           <BurderWrapper
             className="pointer"

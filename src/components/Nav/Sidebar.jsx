@@ -3,26 +3,31 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
-import Logo from "../../assets//logo.svg";
-import Logo2 from "../../assets//Les Jolies Brindilles-2.svg"
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import Logo2 from "../../assets//Les Jolies Brindilles-2.svg";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import CheckOpenStatus from "../Elements/CheckOpenStatus";
 import PhoneIcon from "@mui/icons-material/Phone";
-
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate burgundyBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-        <img style={{ width: "300px", fill:'white'}} src={Logo2} alt="Logo les jolies brindilles fleuriste passionnée" />
+          <img
+            style={{ width: "300px", fill: "white" }}
+            src={Logo2}
+            alt="Logo les jolies brindilles fleuriste passionnée"
+          />
 
           {/* <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
             Les Jolies Brindilles
           </h1> */}
         </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+        <CloseBtn
+          onClick={() => toggleSidebar(!sidebarOpen)}
+          className="animate pointer"
+        >
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
@@ -114,28 +119,40 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
-       
-      <li className="semiBold font15 pointer flexCenter">
-              <a href="https://www.facebook.com/lesjoliesbrindilles/" className="radius8 lightBg" style={{ padding: "5px 10px" }}>
-                <FacebookIcon />
-              </a>
-            </li>
-            <li className="semiBold font15 pointer flexCenter">
-              <a href="https://www.instagram.com/lesjoliesbrindilles/" className="radius8 lightBg" style={{ padding: "5px 10px",marginLeft:"10px" }}>
-                <InstagramIcon />
-             </a>
-            </li>
-            <li className="semiBold font15 pointer flexCenter">
-              <a href="tel:+33658784107" className="radius8 lightBg" style={{ padding: "5px 10px",marginLeft:"10px" }}>
-               <PhoneIcon />
-             </a>
-            </li>
-            <li className="semiBold font20 flexCenter radius8 lightBg" style={{ padding: "5px 10px",marginLeft:"10px" }}>
-
-               <CheckOpenStatus />
-
-            </li>
-             {/* <li className="semiBold font15 pointer">
+        <li className="semiBold font15 pointer flexCenter">
+          <a
+            href="https://www.facebook.com/lesjoliesbrindilles/"
+            className="radius8 lightBg"
+            style={{ padding: "5px 10px" }}
+          >
+            <FacebookIcon />
+          </a>
+        </li>
+        <li className="semiBold font15 pointer flexCenter">
+          <a
+            href="https://www.instagram.com/lesjoliesbrindilles/"
+            className="radius8 lightBg"
+            style={{ padding: "5px 10px", marginLeft: "10px" }}
+          >
+            <InstagramIcon />
+          </a>
+        </li>
+        <li className="semiBold font15 pointer flexCenter">
+          <a
+            href="tel:+33658784107"
+            className="radius8 lightBg"
+            style={{ padding: "5px 10px", marginLeft: "10px" }}
+          >
+            <PhoneIcon />
+          </a>
+        </li>
+        <li
+          className="semiBold font20 flexCenter radius8 lightBg"
+          style={{ padding: "5px 10px", marginLeft: "10px" }}
+        >
+          <CheckOpenStatus />
+        </li>
+        {/* <li className="semiBold font15 pointer">
           <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
             Log in
           </a>
@@ -156,7 +173,7 @@ const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   padding: 0 30px;
-  right: ${(props) => (props.sidebarOpen ? "0px" : "-400px")};
+  right: ${(props) => (props.sidebarOpen ? "0px" : "-500px")};
   z-index: 9999;
   @media (max-width: 400px) {
     width: 100%;
@@ -169,7 +186,6 @@ const CloseBtn = styled.button`
   border: 0px;
   outline: none;
   background-color: transparent;
-
 `;
 const UlStyle = styled.ul`
   padding: 40px;

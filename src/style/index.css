@@ -126,7 +126,7 @@
   }
   .flexSpaceCenter {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
   }
   .flexNullCenter {
@@ -286,4 +286,11 @@
 }
 img {
   object-fit: cover;
+}
+@media ( max-width: 768px ) {
+  .adjustSize{
+  width: 50%;
+  margin-right: 40px;
+
+}
 }

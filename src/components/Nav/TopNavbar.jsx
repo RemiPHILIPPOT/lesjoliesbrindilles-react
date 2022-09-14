@@ -32,7 +32,7 @@ export default function TopNavbar() {
         style={y > 100 ? { height: "100px" } : { height: "110px" }}
       >
         <NavInner className="container flexSpaceCenter">
-          <Link className="pointer flexNullCenter" to="home" smooth={true}>
+          <Link className="pointer flexNullCenter adjustSize" to="home" smooth={true}>
             <img
               style={{ width: "300px" }}
               src={Logo}
